@@ -14,7 +14,7 @@
 		3D5484AF198C8E2B00E4C0DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5484AE198C8E2B00E4C0DD /* main.m */; };
 		3D5484B3198C8E2B00E4C0DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5484B2198C8E2B00E4C0DD /* AppDelegate.m */; };
 		3D5484B6198C8E2B00E4C0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5484B4198C8E2B00E4C0DD /* Main.storyboard */; };
-		3D5484B9198C8E2B00E4C0DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5484B8198C8E2B00E4C0DD /* ViewController.m */; };
+		3D5484B9198C8E2B00E4C0DD /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5484B8198C8E2B00E4C0DD /* ColorViewController.m */; };
 		3D5484BB198C8E2B00E4C0DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5484BA198C8E2B00E4C0DD /* Images.xcassets */; };
 		3D5484C2198C8E2B00E4C0DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5484C1198C8E2B00E4C0DD /* XCTest.framework */; };
 		3D5484C3198C8E2B00E4C0DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5484A2198C8E2B00E4C0DD /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		3D5484B1198C8E2B00E4C0DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D5484B2198C8E2B00E4C0DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D5484B5198C8E2B00E4C0DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D5484B7198C8E2B00E4C0DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3D5484B8198C8E2B00E4C0DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D5484B7198C8E2B00E4C0DD /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		3D5484B8198C8E2B00E4C0DD /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		3D5484BA198C8E2B00E4C0DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3D5484C0198C8E2B00E4C0DD /* iOS Color CheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Color CheckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5484C1198C8E2B00E4C0DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,8 +115,8 @@
 				3D5484B1198C8E2B00E4C0DD /* AppDelegate.h */,
 				3D5484B2198C8E2B00E4C0DD /* AppDelegate.m */,
 				3D5484B4198C8E2B00E4C0DD /* Main.storyboard */,
-				3D5484B7198C8E2B00E4C0DD /* ViewController.h */,
-				3D5484B8198C8E2B00E4C0DD /* ViewController.m */,
+				3D5484B7198C8E2B00E4C0DD /* ColorViewController.h */,
+				3D5484B8198C8E2B00E4C0DD /* ColorViewController.m */,
 				3D5484BA198C8E2B00E4C0DD /* Images.xcassets */,
 				3D5484A9198C8E2B00E4C0DD /* Supporting Files */,
 			);
@@ -249,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5484B9198C8E2B00E4C0DD /* ViewController.m in Sources */,
+				3D5484B9198C8E2B00E4C0DD /* ColorViewController.m in Sources */,
 				3D5484B3198C8E2B00E4C0DD /* AppDelegate.m in Sources */,
 				3D5484AF198C8E2B00E4C0DD /* main.m in Sources */,
 			);
@@ -456,6 +456,7 @@
 				3D5484D3198C8E2B00E4C0DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D5484D4198C8E2B00E4C0DD /* Build configuration list for PBXNativeTarget "iOS Color CheckerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				3D5484D6198C8E2B00E4C0DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
