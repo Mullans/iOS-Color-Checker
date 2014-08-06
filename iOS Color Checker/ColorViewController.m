@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *greenSlider;
 @property (weak, nonatomic) IBOutlet UILabel *blueValue;
 @property (weak, nonatomic) IBOutlet UISlider *blueSlider;
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
 
 @end
 
@@ -36,6 +37,12 @@
 
 -(void)updateColor{
     [_colorView setBackgroundColor:[UIColor colorWithRed:_redSlider.value green:_greenSlider.value blue:_blueSlider.value alpha:1.0]];
+    [_addButton setTintColor:[UIColor colorWithRed:1-_redSlider.value green:1-_greenSlider.value blue:1-_blueSlider.value alpha:1.0]];
+}
+- (IBAction)addButtonPressed:(id)sender {
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+
+    pasteboard.string = [NSString stringWithFormat:@"r:%.03f g:%.03f b:%.03f",[_redSlider value], [_greenSlider value], [_blueSlider value]];
 }
 
 - (void)viewDidLoad
